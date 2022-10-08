@@ -1,0 +1,96 @@
+.HowToTurkey__container {
+  padding: 0 50px 0 90px;
+  color: #424242;
+}
+
+.HowToTurkey__pageTitle {
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 60px;
+}
+
+.HowToTurkey__handbook {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  grid-gap: 100px;
+  margin-bottom: 90px;
+}
+
+.HowToTurkey__tocList {
+  position: sticky;
+  top: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.HowToTurkey__tocList li {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.HowToTurkey__tocList li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.HowToTurkey__tocList li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 100ms ease-in-out;
+}
+
+.HowToTurkey__tocList li a:hover,
+.HowToTurkey__tocList li a:focus {
+  color: #666;
+}
+
+.HowToTurkey__tocList :global li.active > a {
+  color: #424242;
+  font-weight: 600;
+}
+
+.HowToTurkey__tocList li ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.HowToTurkey__content {
+  margin-right: 100px;
+}
+
+.HowToTurkey__heading1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  margin: 0 0 25px 0;
+}
+
+.HowToTurkey__heading2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0 0 10px 0;
+}
+
+.HowToTurkey__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+
+.HowToTurkey__text + .HowToTurkey__text {
+  margin: 10px 0 0 0;
+}
+
+.HowToTurkey__section + .HowToTurkey__section {
+  margin-top: 40px;
+}
+
+.HowToTurkey__subSection {
+  margin-top: 30px;
+}
