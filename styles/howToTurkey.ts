@@ -121,7 +121,7 @@ export const TableOfContentTitle = styled.h6`
 `;
 
 export const TableOfContentClose = styled.button`
-  display: block;
+  display: none;
   position: absolute;
   right: 30px;
   top: 33px;
@@ -131,6 +131,10 @@ export const TableOfContentClose = styled.button`
   border: 0;
   padding: 0;
   background: transparent;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 export const TableOfContentList = styled.ul`
@@ -183,7 +187,7 @@ export const TableOfContentList = styled.ul`
 `;
 
 export const ScrollTopButton = styled.a`
-  display: block;
+  display: none;
   position: fixed;
   right: 100px;
   bottom: 30px;
@@ -196,10 +200,14 @@ export const ScrollTopButton = styled.a`
   &.active {
     transform: translateY(0%);
   }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 export const TableOfContentsButton = styled.button`
-  display: block;
+  display: none;
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -209,4 +217,8 @@ export const TableOfContentsButton = styled.button`
   border: 0;
   padding: 0;
   background: transparent;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
