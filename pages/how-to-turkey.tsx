@@ -37,7 +37,7 @@ const HowToTurkey: NextPage = () => {
   const onTOCItemClick = useCallback<MouseEventHandler>((e) => {
     if (window.innerWidth > 768) return;
 
-    if (e.target.tagName === 'A') {
+    if ((e.target as Element).tagName === 'A') {
       setTOCActive(false);
     }
   }, []);
