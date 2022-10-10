@@ -1,7 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState, useCallback, MouseEventHandler } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head'
+import Image from 'next/image';
 import { PageTitle } from 'styles/commonStyles';
+import scrollTopImage from 'images/top-arrow.png';
+import menuImage from 'images/menu-burger.png';
+import closeImage from 'images/close.png';
 import {
   Container,
   HandBook,
@@ -12,12 +16,36 @@ import {
   Heading2,
   Text,
   TableOfContent,
+  TableOfContentTitle,
+  TableOfContentClose,
   TableOfContentList,
+  TableOfContentsButton,
+  ScrollTopButton,
 } from 'styles/howToTurkey';
 
 const HowToTurkey: NextPage = () => {
+  const [isTOCActive, setTOCActive] = useState(false);
+
+  const onOpenTOCClick = useCallback(() => {
+    setTOCActive(true);
+  }, []);
+
+  const onCloseTOCClick = useCallback(() => {
+    setTOCActive(false);
+  }, []);
+
+  const onTOCItemClick = useCallback<MouseEventHandler>((e) => {
+    if (window.innerWidth > 768) return;
+
+    if (e.target.tagName === 'A') {
+      setTOCActive(false);
+    }
+  }, []);
+
   useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
+    const scrollButton = document.querySelector('#scroll-to-top');
+
+    const navigationObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         const id = entry.target.getAttribute('id');
         if (entry.intersectionRatio > 0) {
@@ -30,12 +58,22 @@ const HowToTurkey: NextPage = () => {
       });
     });
 
-    document.querySelectorAll('section[id]').forEach((section) => {
-      observer.observe(section);
+    const scrollObserver = new IntersectionObserver(entries => {
+      if (entries[0].boundingClientRect.height + entries[0].boundingClientRect.y < 0) {
+        scrollButton!.classList.add('active');
+      } else {
+        scrollButton!.classList.remove('active');
+      }
     });
+    
+    document.querySelectorAll('section[id]').forEach((section) => {
+      navigationObserver.observe(section);
+    });
+    scrollObserver.observe(document.querySelector('section[id]')!);
 
     return () => {
-      observer.disconnect();
+      navigationObserver.disconnect();
+      scrollObserver.disconnect();
     }
   }, []);
 
@@ -47,7 +85,7 @@ const HowToTurkey: NextPage = () => {
       </Head>
 
       <Container>
-        <PageTitle>ТУРЕЦКИЙ ХЭНДБУК</PageTitle>
+        <PageTitle id="page-title">ТУРЕЦКИЙ ХЭНДБУК</PageTitle>
 
         <HandBook>
           <HandbookContent>
@@ -67,7 +105,11 @@ const HowToTurkey: NextPage = () => {
             </Section>
           </HandbookContent>
 
-          <TableOfContent>
+          <TableOfContent className={isTOCActive ? 'active' : ''} onClick={onTOCItemClick}>
+            <TableOfContentTitle>Содержание</TableOfContentTitle>
+            <TableOfContentClose onClick={onCloseTOCClick}>
+              <Image src={closeImage} alt="Close table of contents" />
+            </TableOfContentClose>
             <TableOfContentList>
               <li><a href="#buy_sim">Покупка SIM карты</a></li>
               <li>
@@ -79,6 +121,13 @@ const HowToTurkey: NextPage = () => {
             </TableOfContentList>
           </TableOfContent>
         </HandBook>
+
+        <TableOfContentsButton onClick={onOpenTOCClick}>
+          <Image src={menuImage} alt="Open table of contents" />
+        </TableOfContentsButton>
+        <ScrollTopButton id="scroll-to-top" href="#page-title">
+          <Image src={scrollTopImage} alt="Scroll top" />
+        </ScrollTopButton>
       </Container>
     </>
   )
