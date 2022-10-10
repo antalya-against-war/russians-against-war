@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
-import styles from './styles/Project.module.css';
+import {
+  Project as ProjectWrapper,
+  Info,
+  Title,
+  Description
+} from './styled';
 
 interface Props {
   title: string;
@@ -12,16 +17,16 @@ interface Props {
 export default function Project({ title, description, link, image }: Props) {
   return (
     <Link href={link}>
-      <div className={styles.Project}>
+      <ProjectWrapper>
         <Image
           src={image}
           alt={title}
         />
-        <div className={styles.Project__info}>
-          <h3 className={styles.Project__title}>{title}</h3>
-          <p className={styles.Project__description}>{description}</p>
-        </div>
-      </div>
+        <Info>
+          <Title>{title}</Title>
+          <Description>{description}</Description>
+        </Info>
+      </ProjectWrapper>
     </Link>
   )
 }

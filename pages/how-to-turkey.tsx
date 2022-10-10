@@ -1,7 +1,19 @@
 import { useEffect } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head'
-import styles from 'styles/HowToTurkey.module.css'
+import { PageTitle } from 'styles/commonStyles';
+import {
+  Container,
+  HandBook,
+  HandbookContent,
+  Section,
+  SubSection,
+  Heading1,
+  Heading2,
+  Text,
+  TableOfContent,
+  TableOfContentList,
+} from 'styles/howToTurkey';
 
 const HowToTurkey: NextPage = () => {
   useEffect(() => {
@@ -32,32 +44,31 @@ const HowToTurkey: NextPage = () => {
       <Head>
         <title>How to Turkey | Russians against war Antalya</title>
         <meta name="description" content="Handbook to settle in Turkey" />
-        <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div className={styles.HowToTurkey__container}>
-        <h2 className={styles.HowToTurkey__pageTitle}>ТУРЕЦКИЙ ХЭНДБУК</h2>
+      <Container>
+        <PageTitle>ТУРЕЦКИЙ ХЭНДБУК</PageTitle>
 
-        <div className={styles.HowToTurkey__handbook}>
-          <div className={styles.HowToTurkey__content}>
-            <section id="buy_sim" className={styles.HowToTurkey__section}>
-              <h3 className={styles.HowToTurkey__heading1}>Покупка SIM карты</h3>
-              <p className={styles.HowToTurkey__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p className={styles.HowToTurkey__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </section>
-            <section id="residence" className={styles.HowToTurkey__section}>
-              <h3 className={styles.HowToTurkey__heading1}>Получение ВНЖ</h3>
-              <p className={styles.HowToTurkey__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p className={styles.HowToTurkey__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <section id="residence--rent" className={styles.HowToTurkey__subSection}>
-                <h3 className={styles.HowToTurkey__heading2}>Аренда жилья</h3>
-                <p className={styles.HowToTurkey__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </section>
-            </section>
-          </div>
+        <HandBook>
+          <HandbookContent>
+            <Section id="buy_sim">
+              <Heading1>Покупка SIM карты</Heading1>
+              <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+              <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+            </Section>
+            <Section id="residence">
+              <Heading1>Получение ВНЖ</Heading1>
+              <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+              <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+              <SubSection id="residence--rent">
+                <Heading2>Аренда жилья</Heading2>
+                <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+              </SubSection>
+            </Section>
+          </HandbookContent>
 
-          <nav className={styles.HowToTurkey__toc}>
-            <ul className={styles.HowToTurkey__tocList}>
+          <TableOfContent>
+            <TableOfContentList>
               <li><a href="#buy_sim">Покупка SIM карты</a></li>
               <li>
                 <a href="#residence">Получение ВНЖ</a>
@@ -65,10 +76,10 @@ const HowToTurkey: NextPage = () => {
                   <li><a href="#residence--rent">Аренда жилья</a></li>
                 </ul>
               </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+            </TableOfContentList>
+          </TableOfContent>
+        </HandBook>
+      </Container>
     </>
   )
 };

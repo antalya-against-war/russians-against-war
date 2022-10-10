@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Project from 'components/Project';
-import styles from 'styles/Home.module.css';
+import { Container, PageTitle } from 'styles/commonStyles';
+import { Section, Text, Projects } from 'styles/home';
 
 import HowToTurkeyImage from 'images/how-to-turkey.png';
 import ShelterImage from 'images/shelter.png';
@@ -12,19 +13,18 @@ const Home: NextPage = () => {
       <Head>
         <title>Russians against war Antalya</title>
         <meta name="description" content="Antalya anti-war community" />
-        <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div className={styles.Home__container}>
-        <div className={styles.Home__paragraph}>
-          <h2 className={styles.Home__title}>О НАС</h2>
-          <p className={styles.Home__text}>
+      <Container>
+        <Section>
+          <PageTitle>О НАС</PageTitle>
+          <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </p>
-        </div>
-        <div className={styles.Home__paragraph}>
-          <h2 className={styles.Home__title}>НАШИ ПРОЕКТЫ</h2>
-          <div className={styles.Home__projects}>
+          </Text>
+        </Section>
+        <Section>
+          <PageTitle>НАШИ ПРОЕКТЫ</PageTitle>
+          <Projects>
             <Project
               title={`Гайд "How to Turkey"`}
               link="/how-to-turkey"
@@ -37,15 +37,15 @@ const Home: NextPage = () => {
               description="Временное жильё для беженцев из Украины в сложной ситуации"
               image={ShelterImage}
             />
-          </div>
-        </div>
-        <div className={styles.Home__paragraph}>
-          <h2 className={styles.Home__title}>ДРУГАЯ ИНФОРМАЦИЯ</h2>
-          <p className={styles.Home__text}>
+          </Projects>
+        </Section>
+        <Section>
+          <PageTitle>ДРУГАЯ ИНФОРМАЦИЯ</PageTitle>
+          <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </p>
-        </div>
-      </div>
+          </Text>
+        </Section>
+      </Container>
     </>
   )
 }

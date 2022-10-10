@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import styles from 'styles/Shelter.module.css';
+import { Container, PageTitle } from 'styles/commonStyles';
+import {} from 'styles/shelter';
 
 const Shelter: NextPage = () => {
   return (
@@ -8,12 +9,11 @@ const Shelter: NextPage = () => {
       <Head>
         <title>Shelter | Russians against war Antalya</title>
         <meta name="description" content="Shelter for ukrainian refugees and russian activists" />
-        <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div className={styles.Shelter__container}>
-        <h2 className={styles.Shelter__title}>ШЕЛТЕР</h2>
-      </div>
+      <Container>
+        <PageTitle>ШЕЛТЕР</PageTitle>
+      </Container>
     </>
   )
 };
