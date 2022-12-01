@@ -39,16 +39,17 @@ const Home: NextPage = () => {
               description="Временное жильё для переселенцев из Украины в сложной ситуации"
               image={ShelterImage}
             />
-            <Project
-              title="Скорая помощь"
-              link="/skoraya"
-              description="Помогаем в острых ситуациях"
-              image={ShelterImage}
-            />
+            
             <Project
               title="Помощь Украине"
               link="/help-for-ukraine"
               description="Гуманитарная помощь пострадавшим от войны"
+              image={ShelterImage}
+            />
+            <Project
+              title="Другие проекты"
+              link="/other-projects"
+              description="Другие проекты"
               image={ShelterImage}
             />
           </Projects>
