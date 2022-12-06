@@ -113,7 +113,7 @@ const OtherProjects: NextPage = () => {
                             </Text>
                         </Section>
                     </HandbookContent>
-                </Handbook>
+                </HandBook>
             </Container>
         </>
 )
