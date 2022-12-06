@@ -1,26 +1,26 @@
 import {Container, PageTitle} from 'styles/commonStyles';
 
-import { useEffect, useState, useCallback, MouseEventHandler } from 'react';
-import type { NextPage } from 'next';
+import {useEffect, useState, useCallback, MouseEventHandler} from 'react';
+import type {NextPage} from 'next';
 import Head from 'next/head'
 import Image from 'next/image';
 import scrollTopImage from 'images/top-arrow.png';
 import menuImage from 'images/menu-burger.png';
 import closeImage from 'images/close.png';
 import {
-  HandBook,
-  HandbookContent,
-  Section,
-  SubSection,
-  Heading1,
-  Heading2,
-  Text,
-  TableOfContent,
-  TableOfContentTitle,
-  TableOfContentClose,
-  TableOfContentList,
-  TableOfContentsButton,
-  ScrollTopButton,
+    HandBook,
+    HandbookContent,
+    Section,
+    SubSection,
+    Heading1,
+    Heading2,
+    Text,
+    TableOfContent,
+    TableOfContentTitle,
+    TableOfContentClose,
+    TableOfContentList,
+    TableOfContentsButton,
+    ScrollTopButton,
 } from 'styles/howToTurkey';
 
 const UkraineHelp: NextPage = () => {
@@ -84,9 +84,10 @@ const UkraineHelp: NextPage = () => {
                             </Text>
                         </Section>
                     </HandbookContent>
+                </HandBook>
             </Container>
         </>
-)
+    )
 };
 
 export default UkraineHelp;
