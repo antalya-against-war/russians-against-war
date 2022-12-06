@@ -62,6 +62,7 @@ const OtherProjects: NextPage = () => {
 
                                 Помогите распространить информацию, чтобы у нас быстрее возникла база.
                                 Писать в телеграм <a href="https://t.me/rakshakti">Анастасии</a>
+                            </Text>
                         </Section>
                         <Section id="photo_turkey_place_of_power">
                             <Heading1>Фотопроект «Турция - мое место силы</Heading1>
