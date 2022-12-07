@@ -1,8 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Container, PageTitle } from 'styles/commonStyles';
-import {} from 'styles/shelter';
-import { Section, Text } from 'styles/home';
+import { Text } from 'styles/home';
+import { Container, PageTitle } from 'styles/common';
 
 const Shelter: NextPage = () => {
   return (

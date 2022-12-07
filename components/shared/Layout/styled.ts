@@ -91,3 +91,41 @@ export const HeaderCaption = styled.p`
     line-height: 24px;
   }
 `;
+
+export const Footer = styled.footer`
+  background: rgba(217,217,217,.5);
+  display: flex;
+`;
+
+export const FooterSection = styled.div`
+  padding: 25px 90px;
+
+  @media (max-width: 1024px) {
+    padding: 25px 50px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 25px 30px;
+  }
+`;
+
+export const SectionTitle = styled.p`
+  color: #424242;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 16px;
+`;
+
+export const SectionLink = styled.a.attrs({
+  target: '__blank',
+})`
+  display: block;
+  color: rgba(36,36,36,.7);
+  font-size: 14px;
+  padding: 8px 0;
+
+  &:hover {
+    color: #242424;
+  }
+`;

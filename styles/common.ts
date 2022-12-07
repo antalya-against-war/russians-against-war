@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 0 90px;
-  color: #424242;
+  width: 1340px;
+  margin: 0 auto;
 
-  @media (max-width: 1024px) {
-    padding: 0 50px;
+  @media (max-width: 1366px) {
+    width: 1024px;
   }
 
-  @media (max-width: 550px) {
-    padding: 0 30px;
+  @media (max-width: 1080px) {
+    width: 768px;
   }
 `;
 
