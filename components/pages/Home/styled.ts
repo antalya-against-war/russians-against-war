@@ -1,23 +1,10 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  margin-bottom: 70px;
-
-  @media (max-width: 1024px) {
-    margin-bottom: 50px;
-  }
+  margin-bottom: 50px;
 
   @media (max-width: 550px) {
     margin-bottom: 30px;
-  }
-`;
-
-export const Text = styled.p`
-  padding: 0;
-  margin: 0;
-
-  &:not(:last-child) {
-    margin-bottom: 10px;
   }
 `;
 

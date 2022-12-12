@@ -3,11 +3,19 @@ import styled from 'styled-components';
 export const Project = styled.div`
   display: block;
   position: relative;
-  width: 375px;
-  height: 214px;
-  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+  border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
+  background-color: #088CE8;
+  padding: 20px;
+  color: #fff;
+  transition: transform .2s;
+
+  &:hover {
+    transform: translateY(-2%);
+  }
 `;
 
 export const Info = styled.div`
@@ -32,6 +40,12 @@ export const Info = styled.div`
   }
 `;
 
+export const Image = styled.img`
+  display: block;
+  height: 68px;
+  margin: 0 auto;
+`;
+
 export const Title = styled.h3`
   font-size: 32px;
   font-weight: 700;
@@ -43,9 +57,9 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 22px;
 
   padding: 0;
   margin: 0;

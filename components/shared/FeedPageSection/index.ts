@@ -1,0 +1,1 @@
+export { FeedPageSection } from './styled';

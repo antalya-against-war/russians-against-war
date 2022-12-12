@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import Image, { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
 import {
   Project as ProjectWrapper,
-  Info,
+  Image,
   Title,
   Description
 } from './styled';
@@ -19,13 +19,11 @@ export default function Project({ title, description, link, image }: Props) {
     <Link href={link}>
       <ProjectWrapper>
         <Image
-          src={image}
+          src={image.src}
           alt={title}
         />
-        <Info>
-          <Title>{title}</Title>
-          <Description>{description}</Description>
-        </Info>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
       </ProjectWrapper>
     </Link>
   )

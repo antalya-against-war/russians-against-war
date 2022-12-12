@@ -1,15 +1,16 @@
 import Head from 'next/head';
-import Project from 'components/pages/Main/Project';
-import { Container, PageTitle } from 'styles/common';
+import Project from 'components/pages/Home/Project';
+import ShelterImage from 'components/pages/Home/images/shelter.png';
+import EmergencyImage from 'components/pages/Home/images/emergency.png';
+import UkraineImage from 'components/pages/Home/images/ukraine.png';
+import CommunicationImage from 'components/pages/Home/images/communication.png';
 import {
-  Section,
-  Text,
-  Projects,
-  FAQQuestion,
-  Question,
-  Answer,
-} from 'styles/home';
-import ShelterImage from 'images/shelter.png';
+  Container,
+  Page,
+  PageTitle,
+  Paragraph,
+} from 'styles/common';
+import { Section, Projects } from 'components/pages/Home';
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -20,55 +21,58 @@ const Home: NextPageWithLayout = () => {
       </Head>
 
       <Container>
-        <Section>
-          <PageTitle>О НАС</PageTitle>
-          <Text>
-            Мы - Антивоенное сообщество россиян. Мы объединяемся и работаем вместе - против войны. 
-            Мы помогаем раненым, переселенцам войны. Проводим митинги в Турции. Помогаем переезжающим россиянам. Организуем встречи, сборы, и различные проекты. 
-            Нет войне!          
-          </Text>
-        </Section>
-        {/* <Section>
-          <PageTitle>ПРОЕКТЫ</PageTitle>
-          <Projects>
-            <Project
-              title={`Гайд "How to Turkey"`}
-              link="/how-to-turkey"
-              description="Хендбук по переезду"
-              image={HowToTurkeyImage}
-            />
-            <Project
-              title="Шелтер"
-              link="/shelter"
-              description="Временное жильё для переселенцев из Украины в сложной ситуации"
-              image={ShelterImage}
-            />
-            
-            <Project
-              title="Помощь Украине"
-              link="/help-for-ukraine"
-              description="Гуманитарная помощь пострадавшим от войны"
-              image={ShelterImage}
-            />
-            <Project
-              title="Другие проекты"
-              link="/other-projects"
-              description="Другие проекты"
-              image={ShelterImage}
-            />
-          </Projects>
-        </Section>
-        <Section>
-          <PageTitle>СОБЫТИЯ</PageTitle>
-          <Projects>
-            <Project
-              title="Шелтер"
-              link="/shelter"
-              description="Временное жильё для беженцев из Украины в сложной ситуации"
-              image={ShelterImage}
-            />
-          </Projects>
-        </Section> */}
+        <Page>
+          <Section>
+            <PageTitle>О НАС</PageTitle>
+            <Paragraph>
+              Мы - Антивоенное сообщество россиян. Мы объединяемся и работаем вместе - против войны. 
+              Мы помогаем раненым, переселенцам войны. Проводим митинги в Турции. Помогаем переезжающим россиянам. Организуем встречи, сборы, и различные проекты. 
+              Нет войне!          
+            </Paragraph>
+          </Section>
+          <Section>
+            <PageTitle>НАПРАВЛЕНИЯ РАБОТЫ</PageTitle>
+            <Projects>
+              <Project
+                title="ШЕЛТЕР"
+                link="/shelter"
+                description="Временное жильё для беженцев с детьми и дружественная аренда"
+                image={ShelterImage}
+              />
+              <Project
+                title="СКОРАЯ ПОМОЩЬ"
+                link="/emergency"
+                description="Материальная помощь беженцам и преследуемым активистам"
+                image={EmergencyImage}
+              />
+              
+              <Project
+                title="ПОМОЩЬ УКРАИНЕ"
+                link="/ukraine"
+                description="Сборы на автомобили и генераторы, и доставка их в Украину"
+                image={UkraineImage}
+              />
+              <Project
+                title="ОБЩЕНИЕ"
+                link="/communication"
+                description="Просветительская работа о преступности путинской войны"
+                image={CommunicationImage}
+              />
+            </Projects>
+          </Section>
+          <Section>
+            <PageTitle>ПОСЛЕДНИЕ НОВОСТИ</PageTitle>
+            <Paragraph>
+              Лента инстаграм
+            </Paragraph>
+          </Section>
+          <Section>
+            <PageTitle>ХОТИТЕ ПОМОЧЬ?</PageTitle>
+            <Paragraph>
+              С идеями, предложениями, you name it можно обращаться по почте bla.bla@gmail.com или написать в телеграм-чат. А также заполнить анкету волонтера   
+            </Paragraph>
+          </Section>
+        </Page>
       </Container>
     </>
   )

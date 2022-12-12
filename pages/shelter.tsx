@@ -1,7 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Text } from 'styles/home';
-import { Container, PageTitle } from 'styles/common';
+import {
+  Container,
+  Page,
+  PageTitle,
+  Paragraph,
+} from 'styles/common';
 
 const Shelter: NextPage = () => {
   return (
@@ -12,14 +16,16 @@ const Shelter: NextPage = () => {
       </Head>
 
       <Container>
-        <PageTitle>Шелтер</PageTitle>
-        <Text>
-            Мы принимаем на постоянное жилье украинцев, спасавшихся от войны.
-В пригороде Антальи есть 3 комнатная квартира, где размещаются переселенцы.
-Сейчас там живут 2 семьи - Денис из Херсона (с женой и ребенком), и мама с 2мя детьми из Николаева
-Мы закрываем аренду, продукты, одежду, коммуналку для жильцов.
-          Полную историю сборов - читайте в <a href="https://t.me/againstwar_antalya_news">канале Антивоенного сообщества</a>      
-          </Text>
+        <Page>
+          <PageTitle>ШЕЛТЕР</PageTitle>
+          <Paragraph>
+              Мы принимаем на постоянное жилье украинцев, спасавшихся от войны.
+  В пригороде Антальи есть 3 комнатная квартира, где размещаются переселенцы.
+  Сейчас там живут 2 семьи - Денис из Херсона (с женой и ребенком), и мама с 2мя детьми из Николаева
+  Мы закрываем аренду, продукты, одежду, коммуналку для жильцов.
+            Полную историю сборов - читайте в <a href="https://t.me/againstwar_antalya_news">канале Антивоенного сообщества</a>      
+            </Paragraph>
+        </Page>
       </Container>
       
     </>

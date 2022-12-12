@@ -8,11 +8,11 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <>
       <GlobalStyles />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans"></link>
       <Layout navigation={navigation}>
         <Head>
-          <link rel="icon" href="/favicon.png" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans"></link>
+          <link rel="icon" href="/favicon.png" />
         </Head>
         <Component {...pageProps} />
       </Layout>

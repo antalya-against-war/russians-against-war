@@ -1,6 +1,10 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Container, PageTitle } from 'styles/common';
+import {
+  Container,
+  Page,
+  PageTitle,
+} from 'styles/common';
 
 const Communication: NextPage = () => {
   return (
@@ -11,7 +15,9 @@ const Communication: NextPage = () => {
       </Head>
 
       <Container>
-        <PageTitle>Информационная работа</PageTitle>
+        <Page>
+          <PageTitle>ИНФОРМАЦИОННАЯ РАБОТА</PageTitle>
+        </Page>
       </Container>
     </>
   )

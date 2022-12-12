@@ -1,6 +1,10 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Container, PageTitle } from 'styles/common';
+import {
+  Container,
+  Page,
+  PageTitle,
+} from 'styles/common';
 
 const Emergency: NextPage = () => {
   return (
@@ -11,7 +15,9 @@ const Emergency: NextPage = () => {
       </Head>
 
       <Container>
-        <PageTitle>Скорая помощь</PageTitle>
+        <Page>
+          <PageTitle>СКОРАЯ ПОМОЩЬ</PageTitle>
+        </Page>
       </Container>
     </>
   )
