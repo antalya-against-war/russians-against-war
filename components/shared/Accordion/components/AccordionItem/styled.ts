@@ -22,6 +22,10 @@ export const AccordionItemWrapper = styled.div`
   & + & {
     border-top: 1px solid rgba(0,0,0,.2);
   }
+
+  @media (max-width: 767px) {
+    padding: 15px 0;
+  }
 `;
 
 export const QuestionWrapper = styled.div`
@@ -36,6 +40,10 @@ export const Question = styled.p`
   font-weight: 700;
   line-height: 25px;
   user-select: none;
+
+  @media (max-width: 767px) {
+    margin-left: 45px;
+  }
 `
 
 export const ItemContent = styled.div<{ opened: boolean }>`
@@ -52,4 +60,8 @@ export const ItemContent = styled.div<{ opened: boolean }>`
     margin-top: 15px;
     height: auto;
   `}
+
+  @media (max-width: 767px) {
+    margin-left: 45px;
+  }
 `;

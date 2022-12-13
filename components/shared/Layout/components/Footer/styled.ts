@@ -8,10 +8,23 @@ export const Wrapper = styled.footer`
 export const Content = styled.div`
   display: flex;
   padding: 30px 0;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 export const Section = styled.div`
   margin-right: 100px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin-right: 0;
+
+    &:not(:first-child) {
+      margin-top: 25px;
+    }
+  }
 `;
 
 export const SectionTitle = styled.p`

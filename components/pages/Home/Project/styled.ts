@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const Project = styled.div`
   display: block;
   position: relative;
-  width: 400px;
-  height: 200px;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
@@ -44,6 +42,10 @@ export const Image = styled.img`
   display: block;
   height: 68px;
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    height: 51px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -54,6 +56,11 @@ export const Title = styled.h3`
   margin: 0 0 10px;
   padding: 0;
   text-align: center;
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
 `;
 
 export const Description = styled.p`
@@ -64,4 +71,9 @@ export const Description = styled.p`
   padding: 0;
   margin: 0;
   text-align: center;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 `;

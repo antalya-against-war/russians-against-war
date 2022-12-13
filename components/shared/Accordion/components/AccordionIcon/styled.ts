@@ -4,6 +4,10 @@ export const IconWrapper = styled.div`
   width: 25px;
   height: 25px;
   position: absolute;
+
+  @media (max-width: 767px) {
+    width: 15px;
+  }
 `;
 
 export const LineMinus = styled.div`

@@ -10,16 +10,10 @@ export const Section = styled.section`
 
 export const Projects = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 20px;
-  justify-items: center;
-  align-items: center;
 
-  @media (max-width: 1280px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media screen and (max-width: 920px) {
-    grid-template-columns: 1fr;
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 `;

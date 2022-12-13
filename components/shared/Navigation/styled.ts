@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const NavigationWrapper = styled.nav`
   display: flex;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const Item = styled.a`
