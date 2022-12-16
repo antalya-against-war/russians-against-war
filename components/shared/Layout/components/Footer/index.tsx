@@ -19,7 +19,7 @@ export default function Footer() {
             <Link href="https://t.me/againstwar_antalya_news" passHref ><SectionLink target="_blank">Канал анонсов мероприятий</SectionLink></Link>
             <Link href="https://t.me/rus_antalya" passHref><SectionLink target="_blank">Помощь в переезде</SectionLink></Link>
             <Link href="https://t.me/antalya_it" passHref><SectionLink target="_blank">Чат IT-специалистов</SectionLink></Link>
-            <Link href="https://t.me/antalya_it" passHref><SectionLink target="_blank">Чат для родителей</SectionLink></Link>
+            <Link href="https://t.me/antalya_parents" passHref><SectionLink target="_blank">Чат для родителей</SectionLink></Link>
           </Section>
           <Section>
             <SectionTitle>Проекты</SectionTitle>

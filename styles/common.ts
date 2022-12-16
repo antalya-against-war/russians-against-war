@@ -1,5 +1,15 @@
 import styled, { css } from 'styled-components';
 
+const regularText = css`
+  font-size: 18px;
+  line-height: 24px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+`;
+
 export const Container = styled.div`
   width: 1340px;
   margin: 0 auto;
@@ -20,6 +30,16 @@ export const Container = styled.div`
 
 export const Page = styled.div`
   margin: 40px 0 50px;
+
+  & ul {
+    ${regularText};
+    
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 
   @media (max-width: 767px) {
     margin: 25px 0 35px;
@@ -56,17 +76,24 @@ export const Title = styled.h3<{ inText?: boolean }>`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 18px;
-  line-height: 24px;
+  ${regularText};
+
   padding: 0;
   margin: 0;
 
   &:not(:last-child) {
     margin-bottom: 10px;
   }
+`;
 
-  @media (max-width: 767px) {
-    font-size: 16px;
-    line-height: 22px;
+export const IFrame = styled.iframe`
+  width: 560px;
+  height: 315px;
+  margin: 20px 0;
+
+  @media (max-width: 599px) {
+    width: 335px;
+    height: 188px;
+    margin: 10px 0;
   }
 `;

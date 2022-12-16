@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     color: #424242;
     height: 100%;
+    scroll-behavior: smooth !important;
   }
 
   * {
@@ -22,5 +23,14 @@ export const GlobalStyles = createGlobalStyle`
 
   main {
     flex-grow: 1;
+  }
+
+  a {
+    color: rgba(36,36,36,.7);
+    font-style: italic;
+  }
+
+  a:hover {
+    color: #424242;
   }
 `;

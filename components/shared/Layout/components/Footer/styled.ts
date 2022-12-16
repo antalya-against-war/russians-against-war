@@ -39,6 +39,7 @@ export const SectionLink = styled.a`
   display: block;
   color: rgba(36,36,36,.7);
   font-size: 14px;
+  font-style: normal;
   padding: 5px 0;
   text-decoration: none;
 

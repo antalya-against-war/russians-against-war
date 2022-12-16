@@ -17,6 +17,7 @@ export const Item = styled.a`
 
   font-weight: 700;
   font-size: 18px;
+  font-style: normal;
 
   text-decoration: none;
   color: #242424;
