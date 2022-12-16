@@ -23,7 +23,7 @@ export default function Footer() {
           </Section>
           <Section>
             <SectionTitle>Проекты</SectionTitle>
-            <Link href="/shelter" passHref><SectionLink>Шелтер</SectionLink></Link>
+            <Link href="/housing" passHref><SectionLink>Жильё</SectionLink></Link>
             <Link href="/emergency" passHref><SectionLink>Скорая помощь</SectionLink></Link>
             <Link href="/ukraine" passHref><SectionLink>Помощь Украине</SectionLink></Link>
             <Link href="/communication" passHref><SectionLink>Информационная работа</SectionLink></Link>
