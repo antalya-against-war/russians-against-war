@@ -31,6 +31,7 @@ export default function Footer() {
           <Section>
             <SectionTitle>Связаться с нами</SectionTitle>
             <Link href="https://www.instagram.com/russians_against_war_antalya" passHref><SectionLink target="_blank">Instagram</SectionLink></Link>
+            <Link href="https://www.facebook.com/groups/6169338913096340" passHref><SectionLink target="_blank">Facebook</SectionLink></Link>
             <Link href="mailto:antalya_against_war@proton.me" passHref><SectionLink target="_blank">Email</SectionLink></Link>
           </Section>
         </Content>
