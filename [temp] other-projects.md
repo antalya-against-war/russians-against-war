@@ -1,8 +1,3 @@
-import type { NextPage } from 'next';
-import Head from 'next/head'
-import { Container, PageTitle } from 'styles/common';
-
-const text = ```
 Фотопроект Турция - мое место силы
 
 Предлагаем вам принять участие в фотомарафоне <b>Турция - место силы</b>. У многих из нас,
@@ -52,21 +47,3 @@ const text = ```
 </li>
 <li>СРОК ПРИЕМА РАБОТ - ДО 25.11!</li>
 <li> ✨Пусть Анталия вдохновит и пробудит творческое начало!
-```
-
-const OtherProjects: NextPage = () => {
-    return (
-        <>
-            <Head>
-                <title>Other projects | Russians against war Antalya</title>
-                <meta name="description" content="other projects"/>
-            </Head>
-
-            <Container>
-                <PageTitle>Другие проекты</PageTitle>
-            </Container>
-        </>
-    )
-};
-
-export default OtherProjects;
