@@ -17,7 +17,7 @@ const Home: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Russians against war Antalya</title>
+        <title>Russians Against War Antalya</title>
         <meta name="description" content="Antalya anti-war community" />
       </Head>
 

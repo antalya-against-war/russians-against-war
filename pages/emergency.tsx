@@ -12,7 +12,7 @@ const Emergency: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Emergency | Russians against war Antalya</title>
+        <title>Emergency | Russians Against War Antalya</title>
         <meta name="description" content="Fund for emergency situations" />
       </Head>
 
