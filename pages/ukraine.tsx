@@ -17,8 +17,7 @@ const Ukraine: NextPageWithLayout = () => {
     <>
       <Head>
         <title>Help for Ukraine | Russians Against War Antalya</title>
-        {/* TODO: fill description */}
-        <meta name="description" content="" />
+        <meta name="description" content="Russians in Antalya help Ukraine with minibuses and generators" />
       </Head>
 
       <Container>
@@ -31,7 +30,7 @@ const Ukraine: NextPageWithLayout = () => {
               <FeedItem date="08.12.2022">
                 <Paragraph>
                   Закончили сбор и доставили генератор в Дом инвалида в городе Брацлав. С покупкой помогал <Link href="https://www.facebook.com/val.bee.5458"><a target="_blank">Валдас Барткевичюс</a></Link>.
-                  Принимал и распределял фонд <Link href="https://uafriendsfoundation.org/"><a target="_blank">&quot;Фонд Друзей Украины&quot;</a></Link>. Один из его лидеров — <Link href="https://www.facebook.com/anton.gulidin.10"><a target="_blank">Антон Гулидин</a></Link> — поблагодарил за помощь:
+                  Принимал и распределял фонд <Link href="https://uafriendsfoundation.org/"><a target="_blank">«Фонд Друзей Украины»</a></Link>. Один из его лидеров — <Link href="https://www.facebook.com/anton.gulidin.10"><a target="_blank">Антон Гулидин</a></Link> — поблагодарил за помощь:
                 </Paragraph>
                 <IFrame src="https://www.youtube.com/embed/afDHzN4W2Qo" title="First generator" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></IFrame>
                 <Paragraph>

@@ -14,7 +14,7 @@ const Housing: NextPageWithLayout = () => {
     <>
       <Head>
         <title>Housing | Russians against war Antalya</title>
-        <meta name="description" content="Shelter for ukrainian refugees and friendly rent" />
+        <meta name="description" content="Russians in Antalya help Ukrainian refugees with housing" />
       </Head>
 
       <Container>
@@ -36,16 +36,16 @@ const Housing: NextPageWithLayout = () => {
             Для оказания финансовой помощи в содержании шелтера писать <Link href="https://t.me/antonlyaptsev" passHref><a target="_blank">Антону</a></Link> в Telegram. Все финансовые операции учитываются и предоставляются по запросу, но донаты записываются анонимно.
           </Paragraph>
           
-          <Title id="rent">Дружественная аренда</Title>
+          <Title id="rent">Гуманитарная аренда</Title>
           <Paragraph>
-            Разместить всех нуждающихся в шелтере не получится. Понимая эту проблему, мы запустили проект &quot;Дружественная аренда&quot;, задачей которого является соединить людей, которые:
+            Разместить всех нуждающихся в шелтере не получится. Понимая эту проблему, мы запустили проект «Гуманитарная аренда», задачей которого является соединить людей, которые:
           </Paragraph>
           <ul>
             <li>готовы временно подселить к себе нуждающихся на возмездной (но ниже рынка) или безвозмездной основе;</li>
             <li>нуждаются во временном жилье.</li>
           </ul>
           <Paragraph>
-            В случае возмездного варианта подселения мы готовы компенсировать до 3000 лир расходов из фонда <Link href="/emergency">&quot;Скорая помощь&quot;</Link>.
+            В случае возмездного варианта подселения мы готовы компенсировать до 3000 лир расходов из фонда <Link href="/emergency">«Скорая помощь»</Link>.
           </Paragraph>
           <Paragraph>
             Если вы хотите помочь жильём или сами нуждаетесь в помощи — пишите <Link href="https://t.me/rakshakti" passHref><a target="_blank">Анастасии</a></Link> в Telegram.

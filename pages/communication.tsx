@@ -18,8 +18,7 @@ const Communication: NextPage = () => {
     <>
       <Head>
         <title>Communication | Russians Against War Antalya</title>
-        {/* TODO: fill description */}
-        <meta name="description" content="" />
+        <meta name="description" content="Russians in Antalya protest against war in Ukraine and explain why putin should be imprisoned" />
       </Head>
 
       <Container>
@@ -60,7 +59,7 @@ const Communication: NextPage = () => {
 
               <FeedItem date="25.11.2022">
                 <Paragraph>
-                  Активист RAW Antalya <Link href="https://www.instagram.com/tv/ClY3tzivVNM"><a target="_blank">Вадим</a></Link> встретился с депутатом турецкого парламента Юмитом Оздагом, лидером партии «Победа» (Zafer Partisi) и рассказал об истинных причинах вторжения захватнических войск в Украину.
+                  Активист RAW Antalya <Link href="https://www.instagram.com/tv/ClY3tzivVNM"><a target="_blank">Вадим</a></Link> встретился с депутатом турецкого парламента Юмитом Оздагом, лидером партии «Победа» (Zafer Partisi), и рассказал об истинных причинах вторжения захватнических войск в Украину.
                   Видео встречи с субтитрами в нашем <Link href="https://www.instagram.com/tv/ClY3tzivVNM"><a target="_blank">Instagram</a></Link>.
                 </Paragraph>
               </FeedItem>
@@ -128,14 +127,12 @@ const Communication: NextPage = () => {
                 <Paragraph>
                   Russians Against War Antalya присоединились к митингу, организованном украинским комьюнити. Подробнее в <Link href="https://www.instagram.com/p/Cg5dW9eoXWc"><a target="_blank">Instagram</a></Link>.
                 </Paragraph>
-                {/* <Image alt="Meeting 05.08.2022" src="/instagram/v/t51.2885-15/297820917_425795049502467_5772205682617810572_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.fkiv2-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=l4YH8BUml3gAX_BO7RJ&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=Mjg5ODQ3Njk0NjA1Mjc0NjU3Mw%3D%3D.2-ccb7-5&oh=00_AfAH1DeAM5ZfXOWpAMhE9pKJUsQJl8cK99zxH3sPmLBTjw&oe=63A2C638&_nc_sid=6136e7" /> */}
               </FeedItem>
 
               <FeedItem date="12.06.2022">
                 <Paragraph>
                   Россияне в Анталии приняли участие во Всемирной акции российских движений сопротивления бессмысленной войне и путинскому режиму. Подробнее в <Link href="https://www.instagram.com/p/CeultLnKIvZ"><a target="_blank">Instagram</a></Link>.
                 </Paragraph>
-                {/* <Image alt="Meeting 12.06.2022" src="/instagram/v/t51.2885-15/287373403_410263797688486_2506936289875453068_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.fkiv2-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=3Z2RYn9JGekAX_5RE3L&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=Mjg1OTM4ODYzNDE4OTYwMzk1Ng%3D%3D.2-ccb7-5&oh=00_AfCSrCfm4UZfRtQz1ayXmRjaO8-649Z9i-AfyUQpf2GNmQ&oe=63A353A5&_nc_sid=6136e7" /> */}
               </FeedItem>
             </Feed>
           </FeedPageSection>
