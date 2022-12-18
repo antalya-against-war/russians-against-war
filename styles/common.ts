@@ -97,3 +97,18 @@ export const IFrame = styled.iframe`
     margin: 10px 0;
   }
 `;
+
+export const Image = styled.img`
+  display: block;
+  object-fit: contain;
+  object-position: left;
+  width: 560px;
+  height: 315px;
+  margin: 20px 0;
+
+  @media (max-width: 599px) {
+    width: 335px;
+    height: 188px;
+    margin: 10px 0;
+  }
+`;

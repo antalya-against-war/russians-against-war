@@ -17,6 +17,7 @@ const Ukraine: NextPageWithLayout = () => {
     <>
       <Head>
         <title>Help for Ukraine | Russians Against War Antalya</title>
+        {/* TODO: fill description */}
         <meta name="description" content="" />
       </Head>
 
