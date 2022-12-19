@@ -65,12 +65,13 @@ const Home: NextPageWithLayout = () => {
               />
             </Projects>
           </Section>
-          <Section>
+          {/* TODO: use Instagram API */}
+          {/* <Section>
             <PageTitle>ПОСЛЕДНИЕ НОВОСТИ</PageTitle>
             <Paragraph>
               Лента инстаграм
             </Paragraph>
-          </Section>
+          </Section> */}
           <Section>
             <PageTitle>ХОТИТЕ ПОМОЧЬ?</PageTitle>
             <Paragraph>
