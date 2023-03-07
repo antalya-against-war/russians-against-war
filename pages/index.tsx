@@ -63,6 +63,12 @@ const Home: NextPageWithLayout = () => {
                 description="Просветительская работа о преступности путинской войны"
                 image={CommunicationImage}
               />
+              <Project
+                title="Антивоенный форум"
+                link="/forum_antalya"
+                description="Форум антивоенных активистов в Анталье. 25-26 марта 2023"
+                image={CommunicationImage}
+              />
             </Projects>
           </Section>
           {/* TODO: use Instagram API */}
