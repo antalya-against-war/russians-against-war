@@ -51,8 +51,7 @@ const Communication: NextPage = () => {
 
               <FeedItem date="29.11.2022">
                 <Paragraph>
-                  RAW Antalya объявили Форум антивоенных активистов Турции, который пройдёт 21-22 января 2023 года в Анталии, чтобы лично познакомиться и обменяться опытом.
-                  Чтобы зарегистрироваться, заполните <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeYdicuZvi9QfOgiqnmasr5Diu_ojszyn1fIzHsEm1l3Sk7Iw/viewform"><a target="_blank">анкету участника</a></Link>.
+                  RAW Antalya провели Форум антивоенных активистов Турции, который пройдёт 21-22 января 2023 года в Анталии, чтобы лично познакомиться и обменяться опытом.
                 </Paragraph>
                 <Image alt="Forum of antiwar activists" src="/instagram/v/t51.2885-15/317370734_1305520300284706_3738484827974648469_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.fkiv2-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=IWQZNWKu0L0AX_haC5i&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=Mjk4MjM4NjU3NzAzNzA5MjEyNQ%3D%3D.2-ccb7-5&oh=00_AfCNqB9j8K2OZStG4U8QABYitO5ZbRNT1d0B3YnQ4Sr6nw&oe=63A3CB19&_nc_sid=6136e7" />
               </FeedItem>

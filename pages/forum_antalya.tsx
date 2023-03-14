@@ -82,7 +82,7 @@ const Forum: NextPage = () => {
                             Коннектимся с другими инициативами, обмениваемся опытом, опыляем друг друга - и цветем
                         </li>
                         <li><i>Распространение информации об инициативах на концертах и прочих мероприятиях. Общаемся с
-                            артистами/площадками/организаторами — и рекламируемся как в последний раз.</i>
+                            артистами/площадками/организаторами — и рекламируемся как в последний раз.</i><br/>
                             Распространили мерч сообщества на Забеге Влади (Каста), благотворительном концерт VOICES OF
                             PEACE 24 февраля в Стамбуле (Noize MC и Монеточка), на антивоенном митинге 25 февраля в
                             анталии.
@@ -97,7 +97,7 @@ const Forum: NextPage = () => {
                         Турции и из-за рубежа - виза в Турцию не нужна!
 
                         <h3>Регистрируйтесь по ссылке как участник или как спикер: <a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSfomxJocdZNx-">https://docs.google.com/forms/d/e/1FAIpQLSfomxJocdZNx-</a>
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfomxJocdZNx-5Fn0SUtqSSQJunIEPfxUNvWQT8_8thgjS81g/viewform">https://docs.google.com/forms/d/e/1FAIpQLSfomxJocdZNx-5Fn0SUtqSSQJunIEPfxUNvWQT8_8thgjS81g/viewform</a>
                         </h3>
 
                         Наши контакты:
@@ -112,7 +112,7 @@ const Forum: NextPage = () => {
                                 target="_blank">Telegram-чат</SectionLink></Link>
                             </li>
                             <li><Link href="https://t.me/rus_antalya" passHref><SectionLink target="_blank">Чат помощи
-                                пережающим россиянам</SectionLink></Link>
+                                переезжающим россиянам</SectionLink></Link>
                             </li>
                             <li><Link href="https://www.facebook.com/groups/6169338913096340" passHref><SectionLink
                                 target="_blank">Facebook</SectionLink></Link>
