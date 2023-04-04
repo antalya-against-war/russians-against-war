@@ -65,8 +65,8 @@ const Home: NextPageWithLayout = () => {
               />
               <Project
                 title="Антивоенный форум"
-                link="/forum_antalya"
-                description="Форум антивоенных активистов в Анталье. 25-26 марта 2023"
+                link="/forum_antalya_3"
+                description="3й Форум антивоенных активистов в Анталье. 3-4 июня 2023"
                 image={CommunicationImage}
               />
             </Projects>
